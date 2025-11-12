@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saw Game</title>
+    <script src="../JavaScript/Otros/functions.js"></script>
+    <script src="../JavaScript/Objetos/Objeto.js"></script>
+    <script src="../JavaScript/Personajes/Personaje.js"></script>
+    <script src="../JavaScript/Personajes/Aliado.js"></script>
+    <script src="../JavaScript/Personajes/Enemigo.js"></script>
+    <script src="../JavaScript/Objetos/Bomba.js"></script>
+    <script src="../JavaScript/Objetos/Disfraz.js"></script>
+    <script src="../JavaScript/Objetos/Foto.js"></script>
+    <script src="../JavaScript/Otros/Puerta.js"></script>
+    <script src="../JavaScript/Objetos/LlaveFinal.js"></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            cargarInventario();
+        });
+    </script>
+
+</head>
+<body>
+<div class="habitacion">
+    <img src="../assets/mapa.png" alt="Mapa" class="map">
+
+    <div class="objeto" id="obj1" style="top: 30%; left: 10%; width: 500px; height: 500px;" onclick="moveToInventory(this)"><img src="../assets/renfe.png"></div>
+    <div class="objeto" id="obj2" style="top: 60%; left: 70%; width: 140px; height: 140px;" onclick="moveToInventory(this)"><img src="../assets/josemicaminando.png"></div>
+
+    <a href="llavejefefinal.html"><!--right-->
+        <div class="puertaDerecha"></div>
+    </a>
+    <a href="SawGame.html"> <!--down-->
+        <div class="puertaAbajo"></div>
+    </a>
+    <div class="dialogo" id="dialogo">
+        <p>Por favor, bombardéenme</p>
+    </div>
+</div>
+<div class="inventory" id="inventory">
+    <strong>Inventario:</strong>
+</div>
+</body>
+</html>
