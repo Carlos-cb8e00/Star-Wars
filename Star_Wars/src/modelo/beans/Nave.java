@@ -1,7 +1,7 @@
 package modelo.beans;
 
 public class Nave {
-    private int ataque = (int) (Math.random()*6 + 5);
+    private int ataque = (int) (Math.random()*6 + 5);   //hay que hacerlo más escalable
     private int defensa=0;
     private String bando="";
 

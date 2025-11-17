@@ -3,7 +3,7 @@ package modelo.procesos;
 import modelo.beans.Nave;
 
 public class Juego {
-    private int numeroNaves;
+    private final int numeroNaves;
     private int puntuacionR, puntuacionI=0;
     private int victoriaI, victoriaR=0;
 
